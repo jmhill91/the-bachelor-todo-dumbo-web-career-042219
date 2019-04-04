@@ -10,7 +10,7 @@ end
 
 def get_contestant_name(data, occupation)
   name=nil
-  data[season].each do |cont|
+  data.each do |season, cont|
     if cont["occupation"]== occupation
       name = cont["name"]
     end
